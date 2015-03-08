@@ -131,6 +131,10 @@ h2 {
 	height: 100%;
 }
 
+.bought p {
+	text-decoration: line-through;
+}
+
 /*-----------clear-----------*/
 
 .clear {
