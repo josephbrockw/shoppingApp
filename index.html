@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" href="css/reset.css">
+
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link href='http://fonts.googleapis.com/css?family=Marck+Script|Nunito:400,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
@@ -20,35 +22,45 @@
 	<section class="head">
 		<h1>Shopping List</h1>
 		<form>
-			<input type="text" name="list-item" class="add-bar">
-			<button type="button">Add</button>
+			<input type="text" name="list-item" maxlength="30" class="add-bar">
+			<button type="button" class="addbutton">Add</button>
 		</form>
 	</section>
 	<section>
 		<div class="list">
-			<h2>To Buy:</h2>
+			<h2 id="toBuytitle">To Buy:</h2>
 			<ul>
 				<li>
-					<span>Milk</span>
+					<div id="textcontain">
+						<p>WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</p>
+					</div>
 					<button type="button">Delete</button>
 				</li>
 				<li>
-					Bread
+					<div id="textcontain">
+						<p>Bread</p>
+					</div>
 					<button type="button">Delete</button>
 				</li>
 				<li>
-					Cheese
+					<div id="textcontain">
+						<p>Cheese</p>
+					</div>
 					<button type="button">Delete</button>
 				</li>
 			</ul>
-			<h2>Completed:</h2>
-			<ul>
+			<h2>Bought:</h2>
+			<ul class="completed">
 				<li>
-					Guns
+					<div id="textcontain">
+						<p>Guns</p>
+					</div>
 					<button type="button">Delete</button>
 				</li>
 				<li>
-					Butter
+					<div id="textcontain">
+						<p>Butter</p>
+					</div>
 					<button type="button">Delete</button>
 				</li>
 			</ul>

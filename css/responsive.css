@@ -1,0 +1,23 @@
+@media screen and (max-width: 750px) {
+	.head button {
+		display: block;
+		width: 70%;
+		margin: 0 15%;
+		padding: 0 0;
+	}
+	.head {
+		padding-bottom: 2em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.list button {
+		display: block;
+		width: 30%;
+		margin: 0 35%;
+		padding: 0 0;
+	}
+	#textcontain {
+		max-width: 95%;
+	}
+}
