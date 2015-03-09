@@ -11,7 +11,15 @@ $('Document').ready(function() {
 	
 // Delete Item
 	$(".deletebutton").mouseup(function () {
-		alert('on the right track');
+			$('.list li>this').remove();
+			// alert('on the right track');
+		})
+
+
+//Clear All Button
+	$(".clearall").mouseup(function () {
+		$('.list li').remove();
+		// needs styling
 	})
 
 
