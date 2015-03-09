@@ -95,7 +95,7 @@ h2 {
 .list li {
 	width: 90%;
 	/*height: 1.5em;*/
-	margin: .25em 5%;
+	margin: .25em 0 .25em 5%;
 	font-size: 1.2em;
 	background-color: #e3d8c9;
 	border-radius: 10px;
@@ -123,6 +123,7 @@ h2 {
 	border-radius: 10px;
 	background-color: #e74c3c;
 	padding: 0;
+	display: inline;
 }
 
 .delete {
