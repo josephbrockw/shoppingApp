@@ -51,7 +51,8 @@ nav li {
 
 .add-bar {
 	width: 70%;
-	margin: .75em 0 1.5em 15%;
+	margin: .75em 0 1.5em 10%;
+	padding: .5em;
 	border-radius: 10px;
 	text-align: center;
 }
@@ -94,25 +95,25 @@ h2 {
 
 .list li {
 	width: 90%;
-	/*height: 1.5em;*/
+	height: 1.5em;
 	margin: .25em 0 .25em 5%;
 	font-size: 1.2em;
 	background-color: #e3d8c9;
 	border-radius: 10px;
-	/*padding: .5em;*/
-	/*line-height: 1.5em;*/
+	line-height: 1.5em
 	overflow: hidden;
 }
 
-#textcontain {
+.textcontain {
 	display: inline-block;
 	max-width: 85%;
 	overflow: hidden;
 }
 .list li p {
 	display: inline;
-	width: 85%;
+	width: 70%;
 	margin-left: .5em;
+	margin-top: .15em;
 	
 }
 
