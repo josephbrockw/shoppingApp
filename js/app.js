@@ -10,27 +10,37 @@ $('Document').ready(function() {
 
 	
 // Delete Item
-	$(".deletebutton").mouseup(function () {
-			$('.list li>this').remove();
-			// alert('on the right track');
-		})
+	$(".deletebutton").click(function () {
+			$(this).parent().remove();
+			// Won't delete added li's
+		});
 
+// Move from Buy to Bought
+	$(".toBuylist li").click(function () {
+		$(this).appendTo($(".bought"));
+	});
 
 //Clear Bought Button
 	$(".clearbought").mousedown(function() {
-		$(this).css("background-color", "blue");
+		$(this).css({"background-color":"#1a2530", "color":"white"});
 	})
-	
+
 	$(".clearbought").mouseup(function () {
 		$('.bought li').remove();
 		// needs styling
-		$(this).css("background-color", "#e74c3c"); 
+		//$(this).css("background-color", "#e74c3c"); 
+		$(this).removeAttr('style');
 	});
 
 
 //Clear All Button
+	$(".clearall").mousedown(function() {
+		$(this).css({"background-color":"#1a2530", "color":"white"});
+	})
+
 	$(".clearall").mouseup(function () {
 		$('.list li').remove();
+		$(this).removeAttr('style');
 		// needs styling
 	});
 
