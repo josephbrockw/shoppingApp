@@ -16,11 +16,23 @@ $('Document').ready(function() {
 		})
 
 
+//Clear Bought Button
+	$(".clearbought").mousedown(function() {
+		$(this).css("background-color", "blue");
+	})
+	
+	$(".clearbought").mouseup(function () {
+		$('.bought li').remove();
+		// needs styling
+		$(this).css("background-color", "#e74c3c"); 
+	});
+
+
 //Clear All Button
 	$(".clearall").mouseup(function () {
 		$('.list li').remove();
 		// needs styling
-	})
+	});
 
 
 

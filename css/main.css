@@ -12,6 +12,10 @@ h1, h2 {
 	color: #e3d8c9;
 }
 
+body {
+	background-color: #e3d8c9;
+}
+
 /*-----------Nav-----------*/
 nav {
 	width: 100%;
