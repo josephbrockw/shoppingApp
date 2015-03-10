@@ -15,9 +15,13 @@ $('Document').ready(function() {
 			// Won't delete added li's
 		});
 
-// Move from Buy to Bought
+// Move from Buy to Bought and back
 	$(".toBuylist li").click(function () {
 		$(this).appendTo($(".bought"));
+	});
+
+	$(".bought li").click(function () {
+		$(this).appendTo($(".toBuylist"));
 	});
 
 //Clear Bought Button
