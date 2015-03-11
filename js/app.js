@@ -7,6 +7,16 @@ $('Document').ready(function() {
 			$(".add-bar").val("");
 	});
 
+	//$(".add-bar").keyup(function(event) {
+		//if(event.which == 13) {
+			//event.preventDefault();
+			//$('.addbutton').click();
+			//$(".toBuylist").append('<li><div class="textcontain"><p>' + $(".add-bar").val() + '</p></div><button class="deletebutton" type="button">Delete</button></li>');
+			//$(".add-bar").val("");
+		//};
+	//});
+	
+
 
 	
 // Delete Item
@@ -47,7 +57,9 @@ $('Document').ready(function() {
 		$(this).removeAttr('style');
 		// needs styling
 	});
-
+	if($('body').width()<500) {
+		alert('winner');
+	}
 
 
 })
