@@ -65,9 +65,12 @@ form input {
 }
 
 .head button {
-	width: 10%;
+	width: 8em;
 	border-radius: 10px;
 	background-color: #e74c3c;
+	padding: .25em 0;
+	font-size: 1em;
+	margin: 0 40% 1em;
 }
 
 
@@ -167,15 +170,32 @@ footer {
 	height: 5rem;
 	background-color: #1a2530;
 	float: bottom;
+	clear: both;
+}
+
+footer p, a {
+	color: #e74c3c;
+	text-decoration: none;
+	text-align: center;
 }
 
 footer p {
+	padding-top: 1em;
+}
+
+footer a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+footer a:visited {
 	color: #e74c3c;
+	text-decoration: none;
 }
 
 /*I was working of formating the footer but did not get a chance to finish*/
 .foot {
 	width: 50%;
 	margin: 1em 25%;
-	border: 1px solid red;
+	
 }

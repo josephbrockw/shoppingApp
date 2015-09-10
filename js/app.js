@@ -40,6 +40,10 @@ $('Document').ready(function() {
 			// Won't delete added li's
 		});
 
+	$(".bought").on('click', '.deletebutton', function() {
+		$(this).parent().remove();
+	})
+
 //Clear Bought Button
 	$(".clearbought").mousedown(function() {
 		$(this).css({"background-color":"#1a2530", "color":"white"});
